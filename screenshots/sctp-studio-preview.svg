@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#121824"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#162030"/>
+      <stop offset="100%" stop-color="#121824"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="700" fill="url(#bgGrad)"/>
+
+  <!-- Top Header Bar -->
+  <rect x="30" y="24" width="1140" height="70" rx="10" fill="url(#cardGrad)" stroke="#233144" stroke-width="1"/>
+  <rect x="48" y="38" width="42" height="42" rx="8" fill="url(#brandGrad)"/>
+  <text x="69" y="65" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="800" font-size="20" text-anchor="middle">ST</text>
+
+  <text x="105" y="55" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="18">SCTPForge Pro <tspan fill="#06b6d4" font-size="12">v1.0.0</tspan></text>
+  <text x="105" y="74" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="12">Zero-Trust 4G/5G Telecom SCTP (RFC 9260 / RFC 4960) &amp; Multi-Homing Signaling Studio</text>
+
+  <rect x="910" y="42" width="120" height="34" rx="6" fill="#1a2332" stroke="#233144"/>
+  <text x="970" y="64" fill="#f1f5f9" font-family="-apple-system, sans-serif" font-weight="600" font-size="12" text-anchor="middle">Export Profile</text>
+
+  <rect x="1040" y="42" width="115" height="34" rx="6" fill="url(#brandGrad)"/>
+  <text x="1097" y="64" fill="#ffffff" font-family="-apple-system, sans-serif" font-weight="700" font-size="12" text-anchor="middle">Run Audit</text>
+
+  <!-- Left Column Card: Wireframe Dissector -->
+  <rect x="30" y="110" width="555" height="270" rx="10" fill="url(#cardGrad)" stroke="#233144"/>
+  <text x="50" y="140" fill="#38bdf8" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">RFC 9260 Binary Wireframe Dissector</text>
+  <rect x="440" y="125" width="125" height="22" rx="4" fill="rgba(6,182,212,0.2)"/>
+  <text x="502" y="140" fill="#06b6d4" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" text-anchor="middle">CRC32C 0x1EDC6F41</text>
+
+  <!-- Metrics row -->
+  <rect x="50" y="160" width="115" height="50" rx="6" fill="#1a2332" stroke="#233144"/>
+  <text x="107" y="185" fill="#38bdf8" font-family="monospace" font-weight="800" font-size="16" text-anchor="middle">56 B</text>
+  <text x="107" y="200" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10" text-anchor="middle">Wire Size</text>
+
+  <rect x="180" y="160" width="115" height="50" rx="6" fill="#1a2332" stroke="#233144"/>
+  <text x="237" y="185" fill="#38bdf8" font-family="monospace" font-weight="800" font-size="16" text-anchor="middle">42 B</text>
+  <text x="237" y="200" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10" text-anchor="middle">DATA Chunk</text>
+
+  <rect x="310" y="160" width="115" height="50" rx="6" fill="#1a2332" stroke="#233144"/>
+  <text x="367" y="185" fill="#10b981" font-family="monospace" font-weight="800" font-size="16" text-anchor="middle">PPID 60</text>
+  <text x="367" y="200" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10" text-anchor="middle">5G NGAP</text>
+
+  <rect x="440" y="160" width="125" height="50" rx="6" fill="#1a2332" stroke="#233144"/>
+  <text x="502" y="185" fill="#a855f7" font-family="monospace" font-weight="800" font-size="15" text-anchor="middle">0x1A2B3C4D</text>
+  <text x="502" y="200" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10" text-anchor="middle">Verification Tag</text>
+
+  <!-- Hex Wireframe Box -->
+  <rect x="50" y="225" width="515" height="85" rx="6" fill="#000000" stroke="#233144"/>
+  <text x="65" y="248" fill="#38bdf8" font-family="monospace" font-size="12">96 0C 96 0C 1A 2B 3C 4D <tspan fill="#10b981">99 EA C6 81</tspan> 00 07 00 2A</text>
+  <text x="65" y="270" fill="#f59e0b" font-family="monospace" font-size="12">00 00 03 E9 00 01 00 00 00 00 00 3C 35 47 2D 4E</text>
+  <text x="65" y="292" fill="#cbd5e1" font-family="monospace" font-size="12">47 41 50 2D 49 4E 49 54 49 41 4C 2D 55 45 00 00</text>
+
+  <text x="50" y="335" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">Ports: 38412 → 38412 | Little-Endian CRC32c: 0x81C6EA99 | 4-Byte Boundary Padding: 2 Bytes</text>
+
+  <!-- Right Column Card: Multi-Homing Failover Latency -->
+  <rect x="615" y="110" width="555" height="270" rx="10" fill="url(#cardGrad)" stroke="#233144"/>
+  <text x="635" y="140" fill="#38bdf8" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">Multi-Homing Failover &amp; BDP Buffer Sizing</text>
+  <rect x="1030" y="125" width="120" height="22" rx="4" fill="rgba(16,185,129,0.2)"/>
+  <text x="1090" y="140" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="700" font-size="10" text-anchor="middle">Hierarchy Valid</text>
+
+  <rect x="635" y="160" width="120" height="50" rx="6" fill="#1a2332" stroke="#233144"/>
+  <text x="695" y="185" fill="#38bdf8" font-family="monospace" font-weight="800" font-size="16" text-anchor="middle">17.0 s</text>
+  <text x="695" y="200" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10" text-anchor="middle">Best Failover</text>
+
+  <rect x="770" y="160" width="120" height="50" rx="6" fill="#1a2332" stroke="#233144"/>
+  <text x="830" y="185" fill="#fbbf24" font-family="monospace" font-weight="800" font-size="16" text-anchor="middle">47.0 s</text>
+  <text x="830" y="200" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10" text-anchor="middle">Worst Failover</text>
+
+  <rect x="905" y="160" width="120" height="50" rx="6" fill="#1a2332" stroke="#233144"/>
+  <text x="965" y="185" fill="#a855f7" font-family="monospace" font-weight="800" font-size="16" text-anchor="middle">2.38 MB</text>
+  <text x="965" y="200" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10" text-anchor="middle">Link BDP</text>
+
+  <rect x="1040" y="160" width="110" height="50" rx="6" fill="#1a2332" stroke="#233144"/>
+  <text x="1095" y="185" fill="#10b981" font-family="monospace" font-weight="800" font-size="16" text-anchor="middle">4.77 MB</text>
+  <text x="1095" y="200" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="10" text-anchor="middle">Rec a_rwnd</text>
+
+  <rect x="635" y="225" width="515" height="135" rx="6" fill="#1a2332" stroke="#233144"/>
+  <text x="650" y="250" fill="#38bdf8" font-family="-apple-system, sans-serif" font-weight="600" font-size="12">Exponential Backoff RTO Sequence:</text>
+  <text x="650" y="275" fill="#cbd5e1" font-family="monospace" font-size="12">T0: 1,000ms → T1: 2,000ms → T2: 4,000ms → T3: 5,000ms → T4: 5,000ms</text>
+  <text x="650" y="305" fill="#34d399" font-family="-apple-system, sans-serif" font-size="12">✓ Assoc.Max.Retrans (10) ≥ Path.Max.Retrans (5) × 1.5</text>
+  <text x="650" y="330" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">Secondary path failover will complete cleanly without tearing down the entire 5G association.</text>
+
+  <!-- Bottom Card: 10-Point Auditor & Multi-Vendor Code Synthesizer -->
+  <rect x="30" y="400" width="1140" height="270" rx="10" fill="url(#cardGrad)" stroke="#233144"/>
+  <text x="50" y="430" fill="#38bdf8" font-family="-apple-system, sans-serif" font-weight="700" font-size="15">10-Point Zero-Trust Telecom Auditor &amp; Multi-Vendor Synthesizer</text>
+  <rect x="1035" y="415" width="115" height="22" rx="4" fill="rgba(16,185,129,0.2)"/>
+  <text x="1092" y="430" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" text-anchor="middle">Grade A+ (100%)</text>
+
+  <!-- Left side of bottom card: Audit items -->
+  <rect x="50" y="450" width="515" height="36" rx="4" fill="#1a2332" stroke="#233144"/>
+  <text x="65" y="473" fill="#f1f5f9" font-family="-apple-system, sans-serif" font-size="12">CRC32c Checksum (RFC 3309) &amp; Castagnoli Hardware Offload</text>
+  <text x="540" y="473" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" text-anchor="end">PASS (10/10)</text>
+
+  <rect x="50" y="495" width="515" height="36" rx="4" fill="#1a2332" stroke="#233144"/>
+  <text x="65" y="518" fill="#f1f5f9" font-family="-apple-system, sans-serif" font-size="12">Multi-Homing Dual-Path Architecture (gNodeB to Dual-AMF)</text>
+  <text x="540" y="518" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" text-anchor="end">PASS (12/12)</text>
+
+  <rect x="50" y="540" width="515" height="36" rx="4" fill="#1a2332" stroke="#233144"/>
+  <text x="65" y="563" fill="#f1f5f9" font-family="-apple-system, sans-serif" font-size="12">Stateless 4-Way Handshake with HMAC-SHA-256 Cookie</text>
+  <text x="540" y="563" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" text-anchor="end">PASS (10/10)</text>
+
+  <rect x="50" y="585" width="515" height="36" rx="4" fill="#1a2332" stroke="#233144"/>
+  <text x="65" y="608" fill="#f1f5f9" font-family="-apple-system, sans-serif" font-size="12">Retransmission Hierarchy &amp; Anti-Session-Abort Calibration</text>
+  <text x="540" y="608" fill="#34d399" font-family="-apple-system, sans-serif" font-weight="700" font-size="11" text-anchor="end">PASS (10/10)</text>
+
+  <rect x="50" y="630" width="515" height="26" rx="4" fill="#1a2332" stroke="#233144"/>
+  <text x="65" y="647" fill="#94a3b8" font-family="-apple-system, sans-serif" font-size="11">+ 6 additional verified criteria (SCTP-AUTH, Streams, PMTUD, Heartbeat, GTSM)</text>
+
+  <!-- Right side of bottom card: Code Output -->
+  <rect x="585" y="450" width="565" height="206" rx="6" fill="#000000" stroke="#233144"/>
+  <text x="605" y="475" fill="#38bdf8" font-family="monospace" font-size="11"># Open5GS 5G Core N2 (NGAP) Configuration</text>
+  <text x="605" y="495" fill="#f1f5f9" font-family="monospace" font-size="11">amf:</text>
+  <text x="605" y="515" fill="#f1f5f9" font-family="monospace" font-size="11">  ngap:</text>
+  <text x="605" y="535" fill="#f1f5f9" font-family="monospace" font-size="11">    server:</text>
+  <text x="605" y="555" fill="#f1f5f9" font-family="monospace" font-size="11">      - address: 10.200.1.10   # Primary N2 Endpoint</text>
+  <text x="605" y="575" fill="#f1f5f9" font-family="monospace" font-size="11">      - address: 10.200.2.10   # Secondary Multi-Homed IP</text>
+  <text x="605" y="595" fill="#f1f5f9" font-family="monospace" font-size="11">        port: 38412</text>
+  <text x="605" y="615" fill="#f1f5f9" font-family="monospace" font-size="11">        checksum: crc32c       # RFC 3309</text>
+  <text x="605" y="635" fill="#34d399" font-family="monospace" font-size="11">        path_max_retrans: 5; hb_interval: 30000</text>
+</svg>
